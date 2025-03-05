@@ -1,0 +1,121 @@
+<svg fill="none" viewBox="0 0 680 280" width="680" height="280" xmlns="http://www.w3.org/2000/svg">
+    <foreignObject width="100%" height="100%">
+        <div xmlns="http://www.w3.org/1999/xhtml">
+            <style>        
+                .glass-card {
+                    background-color: #17203b;
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                    max-width: 42rem;
+                    border-radius: 1rem;
+                    padding: 2.5rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+                }
+        
+                .profile-image {
+                    width: 10rem;
+                    height: 10rem;
+                    border-radius: 1rem;
+                    margin-bottom: 1.5rem;
+                    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+                    border: 4px solid #60a5fa;
+                    transition: transform 0.5s;
+                }
+        
+                .profile-image:hover {
+                    transform: scale(1.05);
+                }
+        
+                .content {
+                    text-align: center;
+                }
+        
+                .name {
+                    font-size: 3rem;
+                    font-weight: 900;
+                    margin-bottom: 0.75rem;
+                    margin-block: 0 !important;
+                    letter-spacing: -0.025em;
+                    color: white;
+                    line-height: 1;
+                }
+        
+                .name-highlight {
+                    color: #60a5fa;
+                }
+        
+                .title {
+                    font-size: 1.25rem;
+                    color: #d1d5db;
+                    font-weight: 500;
+                    margin-block: 0.2em !important;
+                }
+        
+                .header-container {
+                    display: flex;
+                    align-items: center;
+                }
+        
+                .wave-emoji {
+                    margin-left: auto;
+                    margin-right: 2.5rem;
+                }
+        
+                @keyframes wave {
+                    0% { transform: rotate(0.0deg) }
+                    10% { transform: rotate(14.0deg) }
+                    20% { transform: rotate(-8.0deg) }
+                    30% { transform: rotate(14.0deg) }
+                    40% { transform: rotate(-4.0deg) }
+                    50% { transform: rotate(10.0deg) }
+                    60% { transform: rotate(0.0deg) }
+                    100% { transform: rotate(0.0deg) }
+                }
+        
+                .hi {
+                    animation: wave 1.5s linear -0.5s infinite;
+                    display: inline-block;
+                    transform-origin: 70% 70%;
+                    font-size: 3em;
+                }
+        
+                @media (prefers-reduced-motion) {
+                    .hi {
+                        animation: none;
+                    }
+                }
+        
+                @media (min-width: 640px) {
+                    .glass-card {
+                        flex-direction: row;
+                        align-items: center;
+                    }
+        
+                    .profile-image {
+                        margin-right: 2rem;
+                        margin-bottom: 0;
+                    }
+        
+                    .content {
+                        text-align: left;
+                    }
+                }
+            </style>
+            <div class="glass-card">
+                <img class="profile-image"
+                    src="https://www.gravatar.com/avatar/fa08a07ba7197708dda9ed476e9a1531?s=200" />
+                <div class="content">
+                    <div class="header-container">
+                        <h1 class="name">
+                            BOBBY<br /><span class="name-highlight">BONESTELL</span>
+                        </h1>
+                        <div class="hi wave-emoji">👋</div>
+                    </div>
+                    <h2 class="title">Software Engineering — Fintech &amp; Payments</h2>
+                </div>
+            </div>
+        </div>
+    </foreignObject>
+</svg>
