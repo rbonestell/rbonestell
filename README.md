@@ -2,7 +2,7 @@
   <a href="https://www.rbonestell.com/" target="_blank">
     <img src="hello.svg" />
   </a>
-  <br />
+  <br /><br />
   <a href="https://github.com/rbonestell?tab=followers"><img alt="GitHub Followers" src="https://img.shields.io/github/followers/rbonestell?style=flat&logo=github"></a> &nbsp;
   <a href="https://github.com/rbonestell?tab=repositories&q=&type=&language=&sort=stargazers"><img alt="GitHub Stars" src="https://img.shields.io/github/stars/rbonestell?style=flat&logo=github"><a> &nbsp;
   <a href="https://www.npmjs.com/~rbonestell" target="_blank"><img alt="NPM Downloads" src="https://img.shields.io/npm-stat/dy/rbonestell?style=flat&logo=npm&color=%23CC3534"></a> &nbsp; 
