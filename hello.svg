@@ -1,6 +1,5 @@
 <svg fill="none" viewBox="0 0 680 250" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg">
-    <!-- Adding title and description for accessibility -->
-    <title>Bobby Bonestell Profile Banner</title>
+    <title>Bobby Bonestell's Profile Banner</title>
     <desc>Welcome banner for Bobby Bonestell's GitHub profile</desc>
     
     <foreignObject width="100%" height="100%">
@@ -18,7 +17,7 @@
                     .name {
                         font-size: 2.2rem;
                     }
-                    .hi {
+                    .wave-emoji {
                         font-size: 2.5em;
                     }
                     .title {
@@ -44,7 +43,7 @@
                     flex-direction: row;
                 }
         
-                .profile-image {
+                .emoji-box {
                     width: 10rem;
                     height: 10rem;
                     border-radius: 1rem;
@@ -61,7 +60,7 @@
                 .content {
                     text-align: left;
                     flex: 1;
-                    min-width: 0;
+                    width: fit-content;
                 }
         
                 .name {
@@ -85,16 +84,12 @@
                     margin-block: 0.2em !important;
                 }
         
-                .header-container {
+                .text-container {
                     display: flex;
+                    width: auto;
                     align-items: center;
                 }
-        
-                .wave-emoji {
-                    margin-left: auto;
-                    margin-right: auto;
-                }
-        
+                
                 @keyframes wave {
                     0% { transform: rotate(0.0deg) }
                     10% { transform: rotate(14.0deg) }
@@ -106,17 +101,25 @@
                     100% { transform: rotate(0.0deg) }
                 }
         
-                .hi {
+                .wave-emoji {
                     animation: wave 1.5s linear -0.5s infinite;
-                    display: inline;
                     transform-origin: 70% 70%;
                     font-size: 3em;
                     transform: scale(-1, 1); 
                     display: inline-block;
+                    width: auto !important;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+
+                .wave-content {
+                    flex: 1;
+                    display: flex;
+                    justify-content: center;
                 }
         
                 @media (prefers-reduced-motion) {
-                    .hi, .emoji {
+                    .wave-emoji, .emoji {
                         animation: none;
                     }
                 }
@@ -154,7 +157,7 @@
                 #emoji6 { animation-delay: -4s; }
             </style>
             <div class="glass-card nowrap">
-                <div class="profile-image">
+                <div class="emoji-box">
                     <span id="emoji1" class="emoji" role="img" aria-label="Laptop emoji">💻</span>
                     <span id="emoji2" class="emoji" role="img" aria-label="Mobile phone emoji">📱</span>
                     <span id="emoji3" class="emoji" role="img" aria-label="Credit card emoji">💳</span>
@@ -163,14 +166,18 @@
                     <span id="emoji6" class="emoji" role="img" aria-label="Robot emoji">🤖</span>
                 </div>
                 <div class="content">
-                    <div class="header-container nowrap">
+                    <div class="text-container nowrap">
                         <h1 class="name">
                             BOBBY<br /><span class="name-highlight">BONESTELL</span>
                         </h1>
                     </div>
-                    <h2 class="title nowrap">Welcome to my GitHub profile!</h2>
+                    <div class="text-container nowrap">
+                        <h2 class="title nowrap">Welcome to my GitHub profile!</h2>
+                    </div>
                 </div>
-                <div class="hi wave-emoji" role="img" aria-label="Waving hand">👋</div>
+                <div class="content wave-content">
+                    <span class="wave-emoji" role="img" aria-label="Waving hand">👋</span>
+                </div>
             </div>
         </div>
     </foreignObject>
