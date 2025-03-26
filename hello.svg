@@ -12,12 +12,6 @@
                         padding: 1.5rem;
                         align-items: center;
                     }
-                    .profile-image {
-                        margin-right: 0;
-                        margin-bottom: 1.5rem;
-                        width: 8rem;
-                        height: 8rem;
-                    }
                     .content {
                         text-align: center;
                     }
