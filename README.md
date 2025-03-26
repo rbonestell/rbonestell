@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://www.rbonestell.com/" target="_blank">
-    <img src="hello.svg" />
+    <img src="hello.svg" width="650" />
   </a>
   <br /><br />
   <a href="https://github.com/rbonestell?tab=followers"><img alt="GitHub Followers" src="https://img.shields.io/github/followers/rbonestell?style=flat&logo=github"></a> &nbsp;

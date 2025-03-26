@@ -1,7 +1,33 @@
-<svg fill="none" viewBox="0 0 680 250" width="680" height="250" xmlns="http://www.w3.org/2000/svg">
+<svg fill="none" viewBox="0 0 680 250" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg">
+    <!-- Adding title and description for accessibility -->
+    <title>Bobby Bonestell Profile Banner</title>
+    <desc>Welcome banner for Bobby Bonestell's GitHub profile</desc>
+    
     <foreignObject width="100%" height="100%">
         <div xmlns="http://www.w3.org/1999/xhtml">
             <style>
+                @media screen and (max-width: 640px) {
+                    .glass-card {
+                        flex-direction: column;
+                        padding: 1.5rem;
+                    }
+                    .profile-image {
+                        margin-right: 0;
+                        margin-bottom: 1.5rem;
+                        width: 8rem;
+                        height: 8rem;
+                    }
+                    .name {
+                        font-size: 2.2rem;
+                    }
+                    .hi {
+                        font-size: 2.5em;
+                    }
+                    .title {
+                        font-size: 1rem;
+                    }
+                }
+
                 .nowrap {
                     white-space: nowrap;
                     flex-shrink: 0;
@@ -16,9 +42,8 @@
                     padding: 2.5rem;
                     display: flex;
                     align-items: center;
-                    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+                    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
                     flex-direction: row;
-                    align-items: center;
                 }
         
                 .profile-image {
@@ -31,10 +56,14 @@
                     transition: transform 0.5s;
                     margin-right: 2rem;
                     font-size: 4rem;
+                    position: relative;
+                    overflow: hidden;
                 }
         
                 .content {
                     text-align: left;
+                    flex: 1;
+                    min-width: 0;
                 }
         
                 .name {
@@ -84,10 +113,12 @@
                     display: inline;
                     transform-origin: 70% 70%;
                     font-size: 3em;
+                    transform: scale(-1, 1); 
+                    display: inline-block;
                 }
         
                 @media (prefers-reduced-motion) {
-                    .hi {
+                    .hi, .emoji {
                         animation: none;
                     }
                 }
@@ -125,13 +156,13 @@
                 #emoji6 { animation-delay: -4s; }
             </style>
             <div class="glass-card nowrap">
-                <div class="profile-image" style="position: relative; overflow: hidden;">
-                    <span id="emoji1" class="emoji">💻</span>
-                    <span id="emoji2" class="emoji">📱</span>
-                    <span id="emoji3" class="emoji">💳</span>
-                    <span id="emoji4" class="emoji">🎮</span>
-                    <span id="emoji5" class="emoji">🔐</span>
-                    <span id="emoji6" class="emoji">🤖</span>
+                <div class="profile-image">
+                    <span id="emoji1" class="emoji" role="img" aria-label="Laptop emoji">💻</span>
+                    <span id="emoji2" class="emoji" role="img" aria-label="Mobile phone emoji">📱</span>
+                    <span id="emoji3" class="emoji" role="img" aria-label="Credit card emoji">💳</span>
+                    <span id="emoji4" class="emoji" role="img" aria-label="Game controller emoji">🎮</span>
+                    <span id="emoji5" class="emoji" role="img" aria-label="Lock emoji">🔐</span>
+                    <span id="emoji6" class="emoji" role="img" aria-label="Robot emoji">🤖</span>
                 </div>
                 <div class="content">
                     <div class="header-container nowrap">
@@ -141,7 +172,7 @@
                     </div>
                     <h2 class="title nowrap">Welcome to my GitHub profile!</h2>
                 </div>
-                <div class="hi wave-emoji" style="transform: scale(-1, 1); display: inline-block">👋</div>
+                <div class="hi wave-emoji" role="img" aria-label="Waving hand">👋</div>
             </div>
         </div>
     </foreignObject>
