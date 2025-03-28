@@ -26,8 +26,10 @@
                 }
         
                 .emoji-box {
-                    width: 10rem;
-                    height: 10rem;
+                    width: 100%;
+                    max-width: 10rem;
+                    height: auto;
+                    aspect-ratio: 1 / 1;
                     border-radius: 1rem;
                     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
                     border: 4px solid #60a5fa;
