@@ -1,30 +1,11 @@
-<svg fill="none" viewBox="0 0 680 250" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg">
+<svg fill="none" viewBox="0 0 680 250" width="auto" height="auto" xmlns="http://www.w3.org/2000/svg">
     <title>Bobby Bonestell's Profile Banner</title>
     <desc>Welcome banner for Bobby Bonestell's GitHub profile</desc>
     
     <foreignObject width="100%" height="100%">
         <div xmlns="http://www.w3.org/1999/xhtml">
             <style>
-                @media screen and (max-width: 640px) {
-                    .glass-card {
-                        flex-direction: column;
-                        padding: 1.5rem;
-                        align-items: center;
-                    }
-                    .content {
-                        text-align: center;
-                    }
-                    .name {
-                        font-size: 2.2rem;
-                    }
-                    .wave-emoji {
-                        font-size: 2.5em;
-                    }
-                    .title {
-                        font-size: 1rem;
-                    }
-                }
-
+                
                 .nowrap {
                     white-space: nowrap;
                     flex-shrink: 0;
@@ -41,6 +22,7 @@
                     align-items: center;
                     font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
                     flex-direction: row;
+                    height: 100%;
                 }
         
                 .emoji-box {
@@ -148,6 +130,36 @@
                     dominant-baseline: central;
                     animation: slideInAndOut 14s infinite;
                 }
+
+                @media (max-width: 640px) {
+                    .glass-card {
+                        flex-direction: column;
+                        align-items: center;
+                        height: fill-available;
+                    }
+                    .content, .text-container {
+                        text-align: center;
+                        align-items: center;
+                        width: fill;
+                    }
+                    .name {
+                        font-size: 2.2rem;
+                        width: 100%;
+                    }
+                    .wave-emoji {
+                        font-size: 2.5em;
+                        margin-top: 1rem;
+                    }
+                    .title {
+                        font-size: 1rem;
+                    }
+                    .emoji-box {
+                        display: none;
+                    }
+                    .wave-emoji, .emoji {
+                        animation: none;
+                    }
+                }
                 
                 #emoji1 { animation-delay: -4s; }
                 #emoji2 { animation-delay: -2s; }
@@ -177,7 +189,7 @@
                         <h2 class="title nowrap">Welcome to my GitHub profile!</h2>
                     </div>
                 </div>
-                <div class="content wave-content">
+                <div class="wave-content">
                     <span class="wave-emoji" role="img" aria-label="Waving hand">👋</span>
                 </div>
             </div>
