@@ -146,24 +146,26 @@
                     font-size: 4rem;
                     text-anchor: middle;
                     dominant-baseline: central;
-                    animation: slideInAndOut 12s infinite;
+                    animation: slideInAndOut 14s infinite;
                 }
                 
-                #emoji1 { animation-delay: -2s; }
-                #emoji2 { animation-delay: -0s; }
-                #emoji3 { animation-delay: -10s; }
-                #emoji4 { animation-delay: -8s; }
-                #emoji5 { animation-delay: -6s; }
-                #emoji6 { animation-delay: -4s; }
+                #emoji1 { animation-delay: -4s; }
+                #emoji2 { animation-delay: -2s; }
+                #emoji3 { animation-delay: -0s; }
+                #emoji4 { animation-delay: -12s; }
+                #emoji5 { animation-delay: -10s; }
+                #emoji6 { animation-delay: -8s; }
+                #emoji7 { animation-delay: -6s; }
             </style>
             <div class="glass-card nowrap">
                 <div class="emoji-box">
                     <span id="emoji1" class="emoji" role="img" aria-label="Laptop emoji">💻</span>
                     <span id="emoji2" class="emoji" role="img" aria-label="Mobile phone emoji">📱</span>
                     <span id="emoji3" class="emoji" role="img" aria-label="Credit card emoji">💳</span>
-                    <span id="emoji4" class="emoji" role="img" aria-label="Game controller emoji">🎮</span>
-                    <span id="emoji5" class="emoji" role="img" aria-label="Lock emoji">🔐</span>
-                    <span id="emoji6" class="emoji" role="img" aria-label="Robot emoji">🤖</span>
+                    <span id="emoji4" class="emoji" role="img" aria-label="Lock emoji">🔐</span>
+                    <span id="emoji5" class="emoji" role="img" aria-label="Robot emoji">🤖</span>
+                    <span id="emoji6" class="emoji" role="img" aria-label="Game controller emoji">🎮</span>
+                    <span id="emoji7" class="emoji" role="img" aria-label="Racecar emoji">🏎️</span>
                 </div>
                 <div class="content">
                     <div class="text-container nowrap">
